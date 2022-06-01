@@ -1,0 +1,40 @@
+# Gradle
+.gradle
+build/
+
+# Mac
+.DS_Store
+
+# Vim
+*.swo
+*.swp
+
+# IDE
+.idea/
+.project
+.settings
+*.iml
+*.ipr
+*.iws
+
+# Web
+node_modules
+yarn-error.log
+dist
+coverage
+build
+.wizard
+.yarnrc
+yarn
+
+# ETE
+integration/
+docker-compose.yml
+gofigure.yml
+**/var/log
+
+# RTFM
+*.pyc
+
+# Direnv
+.envrc

@@ -1,0 +1,9 @@
+def compileTypeScript = tasks.register('compileTypeScript', CompileTypeScriptTask, { task ->
+    task.sourceFiles.dir = project.layout.projectDirectory.dir('src')
+    task.sourceFiles.include '**/*.ts'
+    task.outputDirectory.set(project.layout.buildDirectory.get().dir('typescript'))
+})
+
+tasks.register('build', DefaultTask, { task ->
+    task.dependsOn compileTypeScript
+})
